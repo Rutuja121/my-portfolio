@@ -53,128 +53,130 @@ const Projects = () => {
     }
   ];
 
-  const featuredProjects = projects.filter(project => project.featured);
-  const otherProjects = projects.filter(project => !project.featured);
+  // Categorize projects
+  const researchProjects = projects.filter(p => [
+    'LGBTQ+ India Organization Campaign',
+    'Lunatic Pencil Social Blog',
+    'Dentsu Multi-Platform Campaigns',
+    'Trakin Tech Content Strategy'
+  ].includes(p.title));
+
+  const leadershipProjects = projects.filter(p => [
+    'ESCP Student Ambassador Program',
+    'NMIMS Placement Committee Leadership'
+  ].includes(p.title));
+
+  // Placeholder for volunteer activities
+  const volunteerProjects: typeof projects = [
+    {
+      title: "Community Clean-Up Drive Organizer",
+      description: "Organized and led a local community clean-up drive, coordinating volunteers and managing logistics to improve neighborhood spaces. Successfully engaged local residents and increased community participation in sustainability efforts.",
+      image: "https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=800",
+      technologies: ["Event Organization", "Community Engagement", "Sustainability"],
+      results: "50+ volunteers, 200kg waste collected",
+      featured: false
+    }
+  ];
 
   return (
-    <section id="projects" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Featured Campaigns
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Marketing campaigns and brand strategies that delivered exceptional results
-          </p>
-        </div>
-
-        {/* Featured Projects */}
-        <div className="grid lg:grid-cols-2 gap-8 mb-16">
-          {featuredProjects.map((project, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="relative group">
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
-                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex gap-4">
-                    <button className="bg-white text-gray-900 p-3 rounded-full hover:bg-gray-100 transition-colors">
-                      <Eye size={20} />
-                    </button>
-                    <button className="bg-white text-gray-900 p-3 rounded-full hover:bg-gray-100 transition-colors">
-                      <ExternalLink size={20} />
-                    </button>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">{project.title}</h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">{project.description}</p>
-                
-                <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-4">
-                  <div className="flex items-center gap-2 mb-2">
-                    <TrendingUp className="text-green-600" size={16} />
-                    <span className="text-green-800 font-semibold text-sm">Key Results</span>
-                  </div>
-                  <p className="text-green-700 text-sm">{project.results}</p>
-                </div>
-                
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} className="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-medium">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="flex gap-4">
-                  <button className="flex items-center gap-2 text-gray-600 hover:text-gray-800 font-medium transition-colors">
-                    <Eye size={16} />
-                    View Case Study
-                  </button>
-                  <button className="flex items-center gap-2 text-gray-600 hover:text-gray-800 font-medium transition-colors">
-                    <ExternalLink size={16} />
-                    Live Campaign
-                  </button>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Other Projects Grid */}
-        <div>
-          <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Other Campaigns</h3>
+    <>
+      <section id="research" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Research / Projects</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Academic and professional research projects, campaigns, and case studies</p>
+          </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {otherProjects.map((project, index) => (
+            {researchProjects.map((project, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-48 object-cover"
-                />
-                
+                <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
                 <div className="p-6">
                   <h4 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h4>
                   <p className="text-gray-600 text-sm mb-3 leading-relaxed">{project.description}</p>
-                  
                   <div className="bg-gray-50 rounded-lg p-3 mb-4">
                     <p className="text-gray-700 text-xs font-medium">{project.results}</p>
                   </div>
-                  
                   <div className="flex flex-wrap gap-1 mb-4">
                     {project.technologies.slice(0, 3).map((tech, techIndex) => (
-                      <span key={techIndex} className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">
-                        {tech}
-                      </span>
+                      <span key={techIndex} className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">{tech}</span>
                     ))}
                     {project.technologies.length > 3 && (
-                      <span className="text-gray-500 text-xs px-2 py-1">
-                        +{project.technologies.length - 3} more
-                      </span>
+                      <span className="text-gray-500 text-xs px-2 py-1">+{project.technologies.length - 3} more</span>
                     )}
-                  </div>
-
-                  <div className="flex gap-3">
-                    <button className="text-gray-600 hover:text-gray-800 text-sm font-medium">
-                      <Eye size={14} className="inline mr-1" />
-                      View
-                    </button>
-                    <button className="text-gray-600 hover:text-gray-800 text-sm font-medium">
-                      <ExternalLink size={14} className="inline mr-1" />
-                      Details
-                    </button>
                   </div>
                 </div>
               </div>
             ))}
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section id="leadership" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Leadership Positions</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Roles and experiences demonstrating leadership and team management</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {leadershipProjects.map((project, index) => (
+              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+                <div className="p-6">
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h4>
+                  <p className="text-gray-600 text-sm mb-3 leading-relaxed">{project.description}</p>
+                  <div className="bg-gray-50 rounded-lg p-3 mb-4">
+                    <p className="text-gray-700 text-xs font-medium">{project.results}</p>
+                  </div>
+                  <div className="flex flex-wrap gap-1 mb-4">
+                    {project.technologies.slice(0, 3).map((tech, techIndex) => (
+                      <span key={techIndex} className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">{tech}</span>
+                    ))}
+                    {project.technologies.length > 3 && (
+                      <span className="text-gray-500 text-xs px-2 py-1">+{project.technologies.length - 3} more</span>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="volunteering" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Volunteer Activities</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Community service and volunteer work</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {volunteerProjects.length === 0 ? (
+              <div className="col-span-full text-center text-gray-500">No volunteer activities listed yet.</div>
+            ) : (
+              volunteerProjects.map((project, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                  <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+                  <div className="p-6">
+                    <h4 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h4>
+                    <p className="text-gray-600 text-sm mb-3 leading-relaxed">{project.description}</p>
+                    <div className="bg-gray-50 rounded-lg p-3 mb-4">
+                      <p className="text-gray-700 text-xs font-medium">{project.results}</p>
+                    </div>
+                    <div className="flex flex-wrap gap-1 mb-4">
+                      {project.technologies.slice(0, 3).map((tech: string, techIndex: number) => (
+                        <span key={techIndex} className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">{tech}</span>
+                      ))}
+                      {project.technologies.length > 3 && (
+                        <span className="text-gray-500 text-xs px-2 py-1">+{project.technologies.length - 3} more</span>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ))
+            )}
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 

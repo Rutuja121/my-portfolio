@@ -18,7 +18,9 @@ const Header = () => {
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Experience', href: '#experience' },
-    { name: 'Portfolio', href: '#projects' },
+    { name: 'Research/Projects', href: '#research' },
+    { name: 'Leadership', href: '#leadership' },
+    { name: 'Volunteering', href: '#volunteering' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -29,7 +31,7 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="text-2xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
-            Marketing Professional
+            Rutuja
           </div>
 
           {/* Desktop Navigation */}
@@ -47,13 +49,10 @@ const Header = () => {
 
           {/* Social Links */}
           <div className="hidden md:flex items-center space-x-4">
-            <a href="https://linkedin.com/in/yourprofile" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <a href="https://www.linkedin.com/in/rutujaabande/" className="text-gray-600 hover:text-gray-900 transition-colors" target="_blank" rel="noopener noreferrer">
               <Linkedin size={20} />
             </a>
-            <a href="https://instagram.com/yourprofile" className="text-gray-600 hover:text-gray-900 transition-colors">
-              <Instagram size={20} />
-            </a>
-            <a href="mailto:your.email@example.com" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <a href="mailto:rutuja.abande@edu.escp.eu" className="text-gray-600 hover:text-gray-900 transition-colors">
               <Mail size={20} />
             </a>
           </div>

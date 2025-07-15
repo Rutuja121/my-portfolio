@@ -34,6 +34,14 @@ const Experience = () => {
       period: "May 2018 - Jul 2018",
       description: "Planned and coordinated retail promotional events and kiosk activations at modern trade outlets and food exhibitions. Generated over 250 leads and converted 80+ new customers via in-person activations and on-ground engagement tactics. Developed understanding of retail marketing and customer acquisition strategies in the wellness food sector.",
       technologies: ["Event Planning", "Lead Generation", "Customer Conversion", "Retail Marketing", "On-ground Activations", "Trade Shows"]
+    },
+    {
+      title: "Marketing & Exchange Coordinator",
+      company: "AIESEC",
+      location: "India",
+      period: "Jan 2018 - Jul 2018",
+      description: "Oversaw communication and planning for 25+ international youth exchange projects, handling schedules and documentation. Supported promotional outreach via email newsletters and coordinated event logistics with external partners.",
+      technologies: ["Event Planning", "Lead Generation", "Customer Conversion", "Retail Marketing", "On-ground Activations", "Trade Shows"]
     }
   ];
 

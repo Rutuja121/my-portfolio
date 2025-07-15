@@ -40,8 +40,8 @@ const Loader: React.FC<LoaderProps> = ({ onLoadingComplete }) => {
         {/* Animated Name */}
         <div className="name-container">
           <h1 className={`animated-name ${nameVisible ? 'visible' : ''}`}>
-            <span className="first-name">Marketing</span>
-            <span className="last-name">Professional</span>
+            <span className="first-name">Rutuja</span>
+            <span className="last-name">Abande</span>
           </h1>
           
           <p className={`animated-title ${titleVisible ? 'visible' : ''}`}>

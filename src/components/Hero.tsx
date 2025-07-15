@@ -4,7 +4,7 @@ import { ArrowDown, Download, ExternalLink } from 'lucide-react';
 const Hero = () => {
   const [displayedName, setDisplayedName] = useState('');
   const [isTypingComplete, setIsTypingComplete] = useState(false);
-  const fullName = 'Your Name';
+  const fullName = "Rutuja Abande";
 
   useEffect(() => {
     let currentIndex = 0;
@@ -29,9 +29,9 @@ const Hero = () => {
           <div className="mb-8">
             <div className="w-64 h-64 mx-auto rounded-full bg-gradient-to-br from-pink-200 to-purple-200 p-2">
               <img
-                src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=500"
-                alt="Marketing Professional"
-                className="w-full h-full rounded-full object-cover shadow-lg"
+                src="/Profile.jpeg"
+                alt="Rutuja Abande"
+                className="w-full h-full rounded-full object-cover object-top shadow-lg"
               />
             </div>
           </div>
@@ -76,19 +76,12 @@ const Hero = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
                 <a 
-                  href="/resume.pdf" 
-                  download="Marketing_Professional_Resume.pdf"
+                  href="/RutujaAbande_Resume.pdf" 
+                  download="RutujaAbande_Resume.pdf"
                   className="bg-gradient-to-r from-pink-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 flex items-center gap-2 hover:scale-105"
                 >
                   <Download size={20} />
                   Download Resume
-                </a>
-                <a 
-                  href="#projects"
-                  className="border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-full font-semibold hover:border-pink-600 hover:text-pink-600 transition-all duration-200 flex items-center gap-2 hover:scale-105"
-                >
-                  <ExternalLink size={20} />
-                  View Projects
                 </a>
               </div>
             </div>
@@ -101,7 +94,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes fadeInUp {
           from {
             opacity: 0;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Linkedin } from 'lucide-react';
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -8,14 +8,14 @@ const Contact = () => {
     {
       icon: <Mail className="text-pink-600" size={24} />,
       title: "Email",
-      value: "your.email@example.com",
-      link: "mailto:your.email@example.com"
+      value: "rutuja.abande@edu.escp.eu",
+      link: "mailto:rutuja.abande@edu.escp.eu"
     },
     {
       icon: <Phone className="text-purple-600" size={24} />,
       title: "Phone",
-      value: "Available upon request",
-      link: "#"
+      value: "+ (49) 1627689701",
+      link: "tel:+491627689701"
     },
     {
       icon: <MapPin className="text-blue-600" size={24} />,
@@ -26,13 +26,13 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: <Linkedin size={24} />, url: "https://linkedin.com/in/yourprofile", label: "LinkedIn" },
-    { icon: <Instagram size={24} />, url: "https://instagram.com/yourprofile", label: "Instagram" },
+    { icon: <Linkedin size={24} />, url: "https://www.linkedin.com/in/rutujaabande/", label: "LinkedIn" },
+    { icon: <Mail size={24} />, url: "mailto:rutuja.abande@edu.escp.eu", label: "Email" },
   ];
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const form = e.target;
+    const form = e.target as HTMLFormElement;
     const data = new FormData(form);
 
     // Replace with your Formspree endpoint
@@ -165,28 +165,8 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="project" className="block text-sm font-medium text-gray-700 mb-2">
-                    Project Type
-                  </label>
-                  <select
-                    id="project"
-                    name="project"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-600 focus:border-transparent transition-all duration-200"
-                  >
-                    <option value="">Select project type</option>
-                    <option value="brand-strategy">Brand Strategy</option>
-                    <option value="digital-marketing">Digital Marketing</option>
-                    <option value="social-media">Social Media Management</option>
-                    <option value="content-marketing">Content Marketing</option>
-                    <option value="campaign-development">Campaign Development</option>
-                    <option value="consulting">Marketing Consulting</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-
-                <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                    Project Details
+                    Details
                   </label>
                   <textarea
                     id="message"
@@ -194,7 +174,7 @@ const Contact = () => {
                     required
                     rows={6}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-600 focus:border-transparent transition-all duration-200 resize-none"
-                    placeholder="Tell me about your project goals, timeline, and how I can help..."
+                    placeholder="Tell me about yourself, and how I can help..."
                   ></textarea>
                 </div>
 
