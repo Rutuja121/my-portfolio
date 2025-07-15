@@ -28,7 +28,7 @@ const Skills = () => {
         { name: "Copywriting", level: 88 },
         { name: "SEO", level: 85 },
         { name: "Social Media Strategies", level: 90 },
-        { name: "Community Management", level: 87 },
+        { name: "Community Management", level: 90 },
         { name: "Content Creation", level: 85 }
       ]
     },
