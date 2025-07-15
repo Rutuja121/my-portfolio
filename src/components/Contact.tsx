@@ -20,7 +20,7 @@ const Contact = () => {
     {
       icon: <MapPin className="text-blue-600" size={24} />,
       title: "Location",
-      value: "Berlin, Madrid, Paris",
+      value: "Paris, France",
       link: "#"
     }
   ];

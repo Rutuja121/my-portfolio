@@ -22,12 +22,12 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-50 via-white to-purple-50">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-white to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
           {/* Profile Image */}
           <div className="mb-8">
-            <div className="w-64 h-64 mx-auto rounded-full bg-gradient-to-br from-pink-200 to-purple-200 p-2">
+            <div className="w-64 h-64 mx-auto rounded-full bg-gradient-to-br from-blue-200 to-slate-200 p-2">
               <img
                 src="/Profile.jpeg"
                 alt="Rutuja Abande"
@@ -40,13 +40,13 @@ const Hero = () => {
           <div className="space-y-6">
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
               Hi, I'm{' '}
-              <span className="bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent relative">
+              <span className="bg-gradient-to-r from-blue-700 to-slate-600 bg-clip-text text-transparent relative">
                 {displayedName}
                 {!isTypingComplete && (
-                  <span className="animate-pulse text-pink-600">|</span>
+                  <span className="animate-pulse text-blue-700">|</span>
                 )}
                 {isTypingComplete && (
-                  <span className="absolute -inset-1 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-20 animate-pulse"></span>
+                  <span className="absolute -inset-1 bg-gradient-to-r from-blue-700 to-slate-600 rounded-lg blur opacity-20 animate-pulse"></span>
                 )}
               </span>
             </h1>
@@ -62,7 +62,7 @@ const Hero = () => {
                 {['Meta Ads', 'Google Ads', 'DV360', 'Analytics', 'SEO', 'Copywriting'].map((tech, index) => (
                   <span 
                     key={tech} 
-                    className="bg-pink-100 text-pink-800 px-4 py-2 rounded-full text-sm font-medium transform transition-all duration-500 hover:scale-105"
+                    className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium transform transition-all duration-500 hover:scale-105"
                     style={{ 
                       animationDelay: `${index * 200 + 1000}ms`,
                       animation: isTypingComplete ? 'fadeInUp 0.6s ease-out forwards' : 'none',
@@ -78,7 +78,7 @@ const Hero = () => {
                 <a 
                   href="/RutujaAbande_Resume.pdf" 
                   download="RutujaAbande_Resume.pdf"
-                  className="bg-gradient-to-r from-pink-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 flex items-center gap-2 hover:scale-105"
+                  className="bg-gradient-to-r from-blue-700 to-slate-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 flex items-center gap-2 hover:scale-105"
                 >
                   <Download size={20} />
                   Download Resume

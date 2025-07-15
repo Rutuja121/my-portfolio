@@ -48,7 +48,7 @@ const Skills = () => {
         { name: "English", level: 100 },
         { name: "Hindi", level: 100 },
         { name: "Marathi", level: 100 },
-        { name: "German", level: 75 },
+        { name: "German", level: 60 },
         { name: "Business Communication", level: 90 }
       ]
     },
@@ -91,7 +91,7 @@ const Skills = () => {
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2">
                       <div 
-                        className="bg-gradient-to-r from-pink-600 to-purple-600 h-2 rounded-full transition-all duration-1000 ease-out"
+                        className="bg-gradient-to-r from-blue-700 to-slate-600 h-2 rounded-full transition-all duration-1000 ease-out"
                         style={{ width: `${skill.level}%` }}
                       ></div>
                     </div>

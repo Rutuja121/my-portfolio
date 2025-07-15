@@ -41,7 +41,7 @@ const Experience = () => {
       location: "India",
       period: "Jan 2018 - Jul 2018",
       description: "Oversaw communication and planning for 25+ international youth exchange projects, handling schedules and documentation. Supported promotional outreach via email newsletters and coordinated event logistics with external partners.",
-      technologies: ["Event Planning", "Lead Generation", "Customer Conversion", "Retail Marketing", "On-ground Activations", "Trade Shows"]
+      technologies: ["Market Analysis", "Team Management", "Public Speaking"]
     }
   ];
 

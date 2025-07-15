@@ -4,22 +4,22 @@ import { Target, TrendingUp, Users, Award } from 'lucide-react';
 const About = () => {
   const highlights = [
     {
-      icon: <Target className="text-pink-600" size={24} />,
+      icon: <Target className="text-blue-700" size={24} />,
       title: "Brand Strategy",
       description: "Developing comprehensive brand strategies that resonate with target audiences"
     },
     {
-      icon: <TrendingUp className="text-purple-600" size={24} />,
+      icon: <TrendingUp className="text-slate-600" size={24} />,
       title: "Growth Marketing",
       description: "Driving measurable growth through data-driven marketing campaigns"
     },
     {
-      icon: <Users className="text-blue-600" size={24} />,
+      icon: <Users className="text-teal-600" size={24} />,
       title: "Social Media",
       description: "Building engaged communities and managing social media presence"
     },
     {
-      icon: <Award className="text-green-600" size={24} />,
+      icon: <Award className="text-emerald-600" size={24} />,
       title: "Campaign Excellence",
       description: "Creating award-winning campaigns that deliver exceptional ROI"
     }
@@ -62,7 +62,7 @@ const About = () => {
 
             <div className="flex flex-wrap gap-3 mt-6">
               {['Meta Ads', 'Google Ads', 'DV360', 'Google Analytics', 'SEO', 'Social Media', 'Copywriting', 'CRM', 'Excel', 'PowerPoint'].map((skill) => (
-                <span key={skill} className="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-medium">
+                <span key={skill} className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
                   {skill}
                 </span>
               ))}

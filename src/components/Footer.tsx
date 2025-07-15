@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand Section */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+            <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-700 to-slate-600 bg-clip-text text-transparent">
               Marketing Professional
             </h3>
             <p className="text-gray-400 leading-relaxed">
@@ -18,9 +18,6 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a href="https://linkedin.com/in/yourprofile" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={20} />
-              </a>
-              <a href="https://instagram.com/yourprofile" className="text-gray-400 hover:text-white transition-colors">
-                <Instagram size={20} />
               </a>
               <a href="mailto:your.email@example.com" className="text-gray-400 hover:text-white transition-colors">
                 <Mail size={20} />
@@ -60,7 +57,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm flex items-center gap-1">
-            Made with <Heart className="text-pink-500" size={16} /> by Marketing Professional
+            Made with <Heart className="text-blue-700" size={16} /> by Marketing Professional
           </p>
           <p className="text-gray-400 text-sm mt-4 md:mt-0">
             © 2024 All rights reserved.
