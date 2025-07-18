@@ -36,7 +36,7 @@ const Contact = () => {
     const data = new FormData(form);
 
     // Replace with your Formspree endpoint
-    await fetch('https://formspree.io/f/xpwlaerr', {
+    await fetch('https://formspree.io/f/xvgqgdbj', {
       method: 'POST',
       body: data,
       headers: {

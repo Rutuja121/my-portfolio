@@ -8,40 +8,131 @@ const Experience = () => {
       company: "Dentsu India (Ad Agency)",
       location: "India",
       period: "Jun 2022 - Nov 2023",
-      description: "Executed paid media campaigns, boosting engagement by 25% through targeted Meta, Google, & DV360 activations. Built automated Excel dashboards & Power BI reports, reducing campaign analysis & reporting time by 30%. Created post-campaign decks and presented strategic recommendations to C-level stakeholders to guide next-phase decisions. Managed cross-market projects independently, coordinating creative, analytics, stakeholder deliverables under tight timelines.",
-      technologies: ["Meta Ads", "Google Ads", "DV360", "Excel", "Power BI", "Campaign Analysis", "Stakeholder Management", "Cross-market Projects"]
+      description: (
+        <ul className="list-disc pl-6 space-y-2 text-gray-700">
+          <li>Led the end-to-end planning and execution of paid media campaigns across Google Ads, Meta, YouTube, LinkedIn, and DV360 for global clients across e-commerce, fintech, and lifestyle sectors, delivering up to 2.4M+ monthly visits with performance uplift of 25%+ in engagement and reduced CPAs.</li>
+          <li>Oversaw a team of 4-5 analysts, supporting cross-channel execution while coordinating with strategy, creative and analytics teams to streamline delivery pipelines across APAC markets including Singapore and Taiwan.</li>
+          <li>Designed and deployed automated campaign dashboards using Power BI, Looker Studio and Excel, reducing reporting turnaround by 30% and enabling faster performance reviews, budget reallocation, and regional pacing checks.</li>
+          <li>Implemented A/B testing frameworks and audience cohort segmentation to refine targeting, reduce channel overlap, and unlock 20%+ growth in direct and organic acquisition.</li>
+          <li>Delivered post-campaign reports and quarterly business reviews (QBRs) for C-level stakeholders, translating marketing data into actionable recommendations for creative optimization, funnel improvements, and market-specific strategy pivots.</li>
+          <li>Partnered with global media publishers and platform reps to pilot new ad formats and sequencing strategies, enhancing upper-funnel visibility and enabling full-funnel storytelling across display and video channels.</li>
+        </ul>
+      ),
+      technologies: [
+        "Meta Ads",
+        "Google Ads",
+        "DV360",
+        "Excel",
+        "Power BI",
+        "KPI Analysis",
+        "Stakeholder Management",
+        "Media Planning",
+        "A/B Testing",
+        "Campaign execution",
+        "Audience Segmentation"
+      ]
     },
     {
       title: "Vogue Advertising Sales Intern",
       company: "Conde Nast India",
       location: "India",
       period: "Jun 2021 - Jul 2021",
-      description: "Performed in-depth competitor intelligence on 90+ luxury brands, streamlining outreach and enhancing pitch success. Developed pitch decks for luxury clients and created a master sheet data, reducing reporting time by 25%. Worked closely with the sales team to understand luxury brand positioning and advertising strategies in the Indian market.",
-      technologies: ["Competitor Analysis", "Pitch Deck Creation", "Data Management", "Luxury Brand Research", "Sales Support", "Market Intelligence"]
+      description: (
+        <ul className="list-disc pl-6 space-y-2 text-gray-700">
+          <li>Conducted competitive research across 90+ luxury fashion brands, supporting market mapping and pitch strategy for upcoming seasonal collections.</li>
+          <li>Maintained and updated internal trackers for pricing, ad discounts, and publication spreads, enhancing visibility and accuracy for sales planning.</li>
+          <li>Supported the creation of client pitch decks and internal presentation materials for product launches and campaign previews.</li>
+          <li>Coordinated with editorial and marketing teams to track campaign assets and layout flow, reducing delivery errors and improving workflow efficiency by 25%.</li>
+          <li>Helped ensure visual brand consistency across all placements by aligning final assets with creative and editorial standards.</li>
+        </ul>
+      ),
+      technologies: [
+        "Luxury Media",
+        "Brand Strategy",
+        "Visual Asset Tracking",
+        "Pricing Strategy",
+        "MS PowerPoint",
+        "MS Excel",
+        "Competitor Analysis"
+      ]
     },
     {
       title: "Social Media Intern",
       company: "Trakin Tech (YouTuber/Influencer)",
       location: "India",
       period: "May 2019 - Jun 2019 & Jun 2021",
-      description: "Maintained daily social media editorial plan across YouTube, Instagram, & Facebook, ensuring timely content rollout for 200K+ audience. Created original posts, drafted captions, & adapted content to drive shareability, increasing 30,000+ new followers in 2 months. Wrote SEO-optimized articles, generating 5,000+ impressions & ranking in the top 4 Google search for key industry terms. Monitored competitor channels weekly and brainstormed innovative content ideas to strengthen community engagement.",
-      technologies: ["YouTube", "Instagram", "Facebook", "SEO Writing", "Content Creation", "Community Management", "Competitor Analysis", "Editorial Planning"]
+      description: (
+        <ul className="list-disc pl-6 space-y-2 text-gray-700">
+          <li>Managed daily content rollout across YouTube, Instagram, and Facebook for a 200K+ follower tech influencer, ensuring timely publishing and editorial consistency.</li>
+          <li>Conducted in-depth research on audience behavior, content consumption, and buyer psychology within the tech and startup creator space to refine platform-specific strategies.</li>
+          <li>Delivered real-time coverage of tech events including Computex Taiwan and the Realme X launch, creating live updates, polls, and Q&A sessions to boost engagement.</li>
+          <li>Wrote and published SEO-optimized blog articles on technology, startups, lifestyle, and business using CMS tools (WordPress), driving 5,000+ organic impressions per article and ranking in top 4 Google results.</li>
+          <li>A/B tested thumbnails, captions, and posting times to maximize performance; helped achieve 30K+ follower growth in 2 months by aligning content with viewer habits and engagement patterns.</li>
+          <li>Monitored competitor creators weekly to track format trends and benchmark growth strategies, feeding insights into editorial planning.</li>
+        </ul>
+      ),
+      technologies: [
+        "Influencer Marketing",
+        "Content Strategy",
+        "Audience Engagement",
+        "SEO",
+        "CMS",
+        "Trend Mapping",
+        "Market Research",
+        "YouTube",
+        "Instagram",
+        "Facebook",
+        "Community Management"
+      ]
     },
     {
       title: "Business Development Intern",
       company: "Desi Farms (Wellness Food Startup)",
       location: "India",
       period: "May 2018 - Jul 2018",
-      description: "Planned and coordinated retail promotional events and kiosk activations at modern trade outlets and food exhibitions. Generated over 250 leads and converted 80+ new customers via in-person activations and on-ground engagement tactics. Developed understanding of retail marketing and customer acquisition strategies in the wellness food sector.",
-      technologies: ["Event Planning", "Lead Generation", "Customer Conversion", "Retail Marketing", "On-ground Activations", "Trade Shows"]
+      description: (
+        <ul className="list-disc pl-6 space-y-2 text-gray-700">
+          <li>Spearheaded POS activation campaigns across 15+ retail zones, setting up branded kiosks in high-footfall areas to increase sampling visibility and shopper engagement.</li>
+          <li>Conducted product sample testing and in-store feedback collection to assess packaging appeal, taste preferences, and brand perception, insights used to refine retail messaging and SKU design.</li>
+          <li>Profiled target customer segments and studied regional buying habits, helping guide market-entry strategy and expansion into 10+ new localities.</li>
+          <li>Ran in-person promotional activations that generated 250+ qualified leads and converted over 80 new customers in under eight weeks.</li>
+          <li>Performed competitive analysis on pricing and product display, providing data-driven recommendations for merchandising and shelf strategy.</li>
+          <li>Acted as a bridge between ground teams and brand management, streamlining sampling logistics and closing feedback loops between retail experience and product development.</li>
+        </ul>
+      ),
+      technologies: [
+        "On-ground Activations",
+        "Trade Shows",
+        "Event Planning",
+        "Go-To-Market Strategy",
+        "Consumer Research & Segmentation",
+        "Lead Generation",
+        "Market Expansion",
+        "POS Optimization"
+      ]
     },
     {
-      title: "Marketing & Exchange Coordinator",
+      title: "Junior Executive Member, Incoming Global Entrepreneur (IGT)",
       company: "AIESEC",
       location: "India",
       period: "Jan 2018 - Jul 2018",
-      description: "Oversaw communication and planning for 25+ international youth exchange projects, handling schedules and documentation. Supported promotional outreach via email newsletters and coordinated event logistics with external partners.",
-      technologies: ["Market Analysis", "Team Management", "Public Speaking"]
+      description: (
+        <ul className="list-disc pl-6 space-y-2 text-gray-700">
+          <li>Pitched and onboarded 30+ companies and NGOs as internship partners for international volunteers, managing outreach, cold calling, and stakeholder negotiations.</li>
+          <li>Facilitated onboarding and local integration for 25+ exchange students, organizing orientation events, volunteering drives, and TED-style talks to foster cultural exchange.</li>
+          <li>Managed end-to-end program coordination including documentation and scheduling across partners and incoming talent.</li>
+          <li>Developed marketing kits, newsletters, and onboarding materials to improve communication flow across internal and external teams.</li>
+          <li>Acted as the liaison between incoming interns and host organizations, ensuring smooth transitions, aligned expectations, and a positive experience for all stakeholders.</li>
+        </ul>
+      ),
+      technologies: [
+        "Partner Outreach",
+        "Cross-Cultural Engagement",
+        "Business Development",
+        "Stakeholder Management",
+        "Team Management",
+        "Public Speaking"
+      ]
     }
   ];
 
@@ -79,7 +170,12 @@ const Experience = () => {
                         <h3 className="text-xl font-bold text-gray-900 mb-1">{exp.title}</h3>
                         <p className="text-lg text-pink-600 font-semibold mb-2">{exp.company}</p>
                       </div>
-                      <ExternalLink className="text-gray-400 hover:text-gray-600 cursor-pointer" size={20} />
+                      {/* External Link Icon: Only for Trakin Tech */}
+                      {exp.company === "Trakin Tech (YouTuber/Influencer)" ? (
+                        <a href="https://trak.in/tags/business/author/rutuja-abande/" target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="text-gray-400 hover:text-gray-600 cursor-pointer" size={20} />
+                        </a>
+                      ) : null}
                     </div>
 
                     <div className="flex items-center gap-4 text-gray-500 text-sm mb-4">

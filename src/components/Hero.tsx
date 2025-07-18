@@ -53,9 +53,7 @@ const Hero = () => {
             
             <div className={`transition-all duration-1000 ${isTypingComplete ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
               <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                Performance-driven marketing student with hands-on experience in paid media campaigns, 
-                KPI reporting, ad copywriting, and client communication. Experienced in working with 
-                marketing platforms like Meta, Google Ads, and DV360.
+                Digital marketing strategist and aspiring consultant with cross-functional experience across performance media, campaign execution, market intelligence, and global brand activations. Whether it’s driving measurable ROI, streamlining reporting frameworks, or translating insights into strategy, I specialize in connecting data with execution.
               </p>
 
               <div className="flex flex-wrap justify-center gap-3 mt-6 mb-8">

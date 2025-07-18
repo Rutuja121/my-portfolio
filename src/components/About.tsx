@@ -40,24 +40,16 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text */}
           <div className="space-y-6">
-            <p className="text-lg text-gray-700 leading-relaxed">
-              I'm a performance-driven marketing student currently pursuing my Master in Management at 
-              ESCP Business School with specialization in Digital Project Management. With hands-on 
-              experience at leading agencies like Dentsu and Conde Nast, I bring a unique blend of 
-              academic knowledge and practical expertise in digital marketing.
+            <p className="text-lg text-gray-700 leading-relaxed text-justify">
+              I’m currently pursuing a Master in Management at ESCP Business School, specializing in Digital Project Management and International Business & Sustainability, with academic experience across Paris, Berlin, and Madrid. This journey has shaped my global perspective and strengthened my adaptability, cultural sensitivity, and ease with ambiguity, qualities I bring to every team
             </p>
             
-            <p className="text-lg text-gray-700 leading-relaxed">
-              My expertise lies in paid media campaigns, KPI reporting, and ad copywriting across 
-              platforms like Meta, Google Ads, and DV360. I've successfully boosted engagement by 25% 
-              through targeted campaigns and reduced reporting time by 30% through automated dashboards. 
-              I'm passionate about combining analytical skills with creative strategy to drive results.
+            <p className="text-lg text-gray-700 leading-relaxed text-justify">
+              I’ve thrive in high-accountability, fast-paced environments where clarity, ownership, and collaboration are key. Working on cross-market campaign teams taught me to translate complex deliverables into clear, actionable steps. I’ve partnered with content creators to grow their digital presence through consistent, data-driven storytelling, and supported the commercial expansion of an FMCG startup by structuring its retail rollout and optimizing in-store visibility.
             </p>
 
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Beyond technical skills, I bring strong leadership experience as Student Ambassador at 
-              ESCP and former President of the Placement Committee at NMIMS. I'm fluent in English, 
-              German, Hindi, and Marathi, making me well-equipped for international marketing roles.
+            <p className="text-lg text-gray-700 leading-relaxed text-justify">
+              Across roles, I’ve led cross-functional marketing initiatives, bridging design, content, and analytics to deliver campaigns that are both creative and strategically grounded. I’m driven by the opportunity to turn ideas into execution and thrive in teams that value curiosity, initiative, and purposeful collaboration.
             </p>
 
             <div className="flex flex-wrap gap-3 mt-6">
