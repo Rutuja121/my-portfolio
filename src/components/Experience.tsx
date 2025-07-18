@@ -60,7 +60,7 @@ const Experience = () => {
       title: "Social Media Intern",
       company: "Trakin Tech (YouTuber/Influencer)",
       location: "India",
-      period: "May 2019 - Jun 2019 & Jun 2021",
+      period: "May 2019 - Jul 2019",
       description: (
         <ul className="list-disc pl-6 space-y-2 text-gray-700">
           <li>Managed daily content rollout across YouTube, Instagram, and Facebook for a 200K+ follower tech influencer, ensuring timely publishing and editorial consistency.</li>
@@ -87,7 +87,7 @@ const Experience = () => {
     },
     {
       title: "Business Development Intern",
-      company: "Desi Farms (Wellness Food Startup)",
+      company: "Desi Farms (Wellness FMCG Startup)",
       location: "India",
       period: "May 2018 - Jul 2018",
       description: (
@@ -131,7 +131,8 @@ const Experience = () => {
         "Business Development",
         "Stakeholder Management",
         "Team Management",
-        "Public Speaking"
+        "Public Speaking",
+        "CRM"
       ]
     }
   ];

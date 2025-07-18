@@ -57,7 +57,7 @@ const Hero = () => {
               </p>
 
               <div className="flex flex-wrap justify-center gap-3 mt-6 mb-8">
-                {['Meta Ads', 'Google Ads', 'DV360', 'Analytics', 'SEO', 'Copywriting'].map((tech, index) => (
+                {['Meta Ads', 'Google Ads', 'Google Analytics', 'SEO', 'A/B Testing', 'Go-to-Market Planning', 'Business Development', 'Brand Activations', 'Benchmarking', 'Looker Studio'].map((tech, index) => (
                   <span 
                     key={tech} 
                     className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium transform transition-all duration-500 hover:scale-105"

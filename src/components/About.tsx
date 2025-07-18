@@ -41,7 +41,7 @@ const About = () => {
           {/* Left Column - Text */}
           <div className="space-y-6">
             <p className="text-lg text-gray-700 leading-relaxed text-justify">
-              I’m currently pursuing a Master in Management at ESCP Business School, specializing in Digital Project Management and International Business & Sustainability, with academic experience across Paris, Berlin, and Madrid. This journey has shaped my global perspective and strengthened my adaptability, cultural sensitivity, and ease with ambiguity, qualities I bring to every team
+              I’m currently pursuing a Master in Management at ESCP Business School, specializing in Digital Project Management and International Business & Sustainability, with academic experience across Paris, Berlin, and Madrid. This journey has shaped my global perspective and strengthened my adaptability, cultural sensitivity, and ease with ambiguity — qualities that I bring to every team.
             </p>
             
             <p className="text-lg text-gray-700 leading-relaxed text-justify">

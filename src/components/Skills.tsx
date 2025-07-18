@@ -3,43 +3,43 @@ import React from 'react';
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Technical Skills",
+      title: "Core Skills",
       skills: [
-        { name: "Meta Ads", level: 90 },
-        { name: "Google Ads", level: 88 },
-        { name: "DV360", level: 85 },
-        { name: "Google Analytics", level: 87 },
-        { name: "MS Excel", level: 92 }
+        { name: "Paid Media Strategy", level: 95 },
+        { name: "Content Strategy & A/B Test", level: 92 },
+        { name: "Competitor Benchmarking & Market Research", level: 90 },
+        { name: "Go-To-Market Planning", level: 88 },
+        { name: "Social Media Strategies", level: 93 }
       ]
     },
     {
-      title: "Marketing Platforms",
+      title: "Data & Analytics",
       skills: [
-        { name: "YouTube Ads", level: 85 },
-        { name: "Campaign Manager 360", level: 82 },
-        { name: "Power BI", level: 80 },
-        { name: "CRM Systems", level: 78 },
-        { name: "PowerPoint", level: 90 }
+        { name: "Power BI", level: 85 },
+        { name: "Google Analytics (GA4)", level: 87 },
+        { name: "Excel (Advanced)", level: 92 },
+        { name: "Looker Studio", level: 80 },
+        { name: "Campaign Manager 360", level: 82 }
       ]
     },
     {
-      title: "Content & Strategy",
+      title: "Platforms & Channels",
       skills: [
-        { name: "Copywriting", level: 88 },
-        { name: "SEO", level: 85 },
-        { name: "Social Media Strategies", level: 90 },
-        { name: "Community Management", level: 90 },
-        { name: "Content Creation", level: 85 }
+        { name: "Google Ads (Search, Display, YouTube)", level: 90 },
+        { name: "Meta Ads (Facebook & Instagram)", level: 90 },
+        { name: "LinkedIn Ads", level: 85 },
+        { name: "Programmatic Ads (DV360)", level: 88 },
+        { name: "SEO & SEMrush", level: 86 }
       ]
     },
     {
-      title: "Project Skills",
+      title: "Content & Tools",
       skills: [
-        { name: "Analytical Skills", level: 92 },
-        { name: "Communication", level: 90 },
-        { name: "Team Collaboration", level: 88 },
-        { name: "Structured Work", level: 90 },
-        { name: "Detail-oriented", level: 95 }
+        { name: "MS PowerPoint", level: 95 },
+        { name: "Google Suite", level: 90 },
+        { name: "Adobe", level: 80 },
+        { name: "Canva", level: 92 },
+        { name: "WordPress & CMS Tools", level: 85 }
       ]
     },
     {
@@ -49,7 +49,7 @@ const Skills = () => {
         { name: "Hindi", level: 100 },
         { name: "Marathi", level: 100 },
         { name: "German", level: 60 },
-        { name: "Business Communication", level: 90 }
+        { name: "French", level: 50 }
       ]
     },
     {
@@ -87,14 +87,18 @@ const Skills = () => {
                   <div key={skillIndex}>
                     <div className="flex justify-between items-center mb-2">
                       <span className="text-gray-700 font-medium">{skill.name}</span>
-                      <span className="text-gray-500 text-sm">{skill.level}%</span>
+                      {"level" in skill && skill.level !== undefined && (
+                        <span className="text-gray-500 text-sm">{skill.level}%</span>
+                      )}
                     </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2">
-                      <div 
-                        className="bg-gradient-to-r from-blue-700 to-slate-600 h-2 rounded-full transition-all duration-1000 ease-out"
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
+                    {"level" in skill && skill.level !== undefined && (
+                      <div className="w-full bg-gray-200 rounded-full h-2">
+                        <div 
+                          className="bg-gradient-to-r from-blue-700 to-slate-600 h-2 rounded-full transition-all duration-1000 ease-out"
+                          style={{ width: `${skill.level}%` }}
+                        ></div>
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
