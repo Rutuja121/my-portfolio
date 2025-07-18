@@ -75,14 +75,7 @@ const Hero = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
-                <a 
-                  href="/RutujaAbande_Resume.pdf" 
-                  download="RutujaAbande_Resume.pdf"
-                  className="bg-gradient-to-r from-blue-700 to-slate-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 flex items-center gap-2 hover:scale-105"
-                >
-                  <Download size={20} />
-                  Download Resume
-                </a>
+                {/* Resume download button removed */}
               </div>
             </div>
           </div>
