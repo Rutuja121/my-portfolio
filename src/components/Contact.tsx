@@ -8,8 +8,8 @@ const Contact = () => {
     {
       icon: <Mail className="text-pink-600" size={24} />,
       title: "Email",
-      value: "rutuja.abande@edu.escp.eu",
-      link: "mailto:rutuja.abande@edu.escp.eu"
+      value: "rutujaabande@gmail.com",
+      link: "mailto:rutujaabande@gmail.com"
     },
     {
       icon: <MapPin className="text-blue-600" size={24} />,
@@ -21,7 +21,7 @@ const Contact = () => {
 
   const socialLinks = [
     { icon: <Linkedin size={24} />, url: "https://www.linkedin.com/in/rutujaabande/", label: "LinkedIn" },
-    { icon: <Mail size={24} />, url: "mailto:rutuja.abande@edu.escp.eu", label: "Email" },
+    { icon: <Mail size={24} />, url: "mailto:rutujaabande@gmail.com", label: "Email" },
   ];
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
