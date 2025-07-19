@@ -12,12 +12,6 @@ const Contact = () => {
       link: "mailto:rutuja.abande@edu.escp.eu"
     },
     {
-      icon: <Phone className="text-purple-600" size={24} />,
-      title: "Phone",
-      value: "+ (49) 1627689701",
-      link: "tel:+491627689701"
-    },
-    {
       icon: <MapPin className="text-blue-600" size={24} />,
       title: "Location",
       value: "Paris, France",

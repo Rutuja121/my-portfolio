@@ -45,7 +45,7 @@ const Loader: React.FC<LoaderProps> = ({ onLoadingComplete }) => {
           </h1>
           
           <p className={`animated-title ${titleVisible ? 'visible' : ''}`}>
-            Digital Marketing Student & Campaign Specialist
+            Consumer Insights & Digital Marketing Strategist
           </p>
         </div>
 
