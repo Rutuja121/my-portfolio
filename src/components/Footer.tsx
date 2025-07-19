@@ -12,14 +12,14 @@ const Footer = () => {
               Marketing Professional
             </h3>
             <p className="text-gray-400 leading-relaxed">
-              Performance-driven marketing student with hands-on experience in paid media campaigns, 
-              KPI reporting, and digital marketing across Meta, Google Ads, and DV360 platforms.
+              Digital marketing strategist and aspiring consultant with cross-functional experience across performance media, 
+              campaign execution, market intelligence, and global brand activations.
             </p>
             <div className="flex space-x-4">
-              <a href="https://linkedin.com/in/yourprofile" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/in/rutujaabande/" className="text-gray-400 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
                 <Linkedin size={20} />
               </a>
-              <a href="mailto:your.email@example.com" className="text-gray-400 hover:text-white transition-colors">
+              <a href="mailto:rutujaabande@gmail.com" className="text-gray-400 hover:text-white transition-colors">
                 <Mail size={20} />
               </a>
             </div>
