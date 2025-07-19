@@ -90,7 +90,7 @@ const Projects = () => {
           <li>Strengthened ESCP's brand presence across international campuses and helped improve applicant engagement funnel.</li>
         </ul>
       ),
-      image: "https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/MIM.jpg",
       technologies: ["Cross-cultural communication", "Webinar facilitation", "CRM coordination", "Stakeholder alignment"],
       results: "Enhanced the school's admissions experience while deepening peer-to-peer engagement and improving webinar-to-application conversions.",
       featured: false
@@ -104,7 +104,7 @@ const Projects = () => {
           <li>Designed and executed Rubix, a flagship 2-day event featuring case competitions, live pitches, and on-the-spot hiring for 300+ student participants.</li>
         </ul>
       ),
-      image: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/placement.jpg",
       technologies: ["Peer mentoring", "Communication Strategy", "Strategic Leadership", "Corporate Relations", "Event Planning"],
       results: "Supported the placement of 100+ students across two years; drove better recruiter-student fit through data-led positioning.",
       featured: false
@@ -269,10 +269,10 @@ const Projects = () => {
             ) : (
               volunteerProjects.map((project, index) => (
                 <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                  <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
+                  <img src={project.image} alt={project.title} className="w-full h-48 object-contain bg-gray-100" />
                   <div className="p-6">
                     <h4 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h4>
-                    <p className="text-gray-600 text-sm mb-3 leading-relaxed">{project.description}</p>
+                    <div className="text-gray-600 text-sm mb-3 leading-relaxed">{project.description}</div>
                     <div className="bg-gray-50 rounded-lg p-3 mb-4">
                       <p className="text-gray-700 text-xs font-medium">{project.results}</p>
                     </div>
