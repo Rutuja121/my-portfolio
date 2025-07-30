@@ -5,41 +5,41 @@ const Skills = () => {
     {
       title: "Core Skills",
       skills: [
-        { name: "Paid Media Strategy", level: 95 },
-        { name: "Content Strategy & A/B Test", level: 92 },
-        { name: "Competitor Benchmarking & Market Research", level: 90 },
-        { name: "Go-To-Market Planning", level: 88 },
-        { name: "Social Media Strategies", level: 93 }
+        { name: "Paid Media Strategy", level: 75 },
+        { name: "Content Strategy & A/B Test", level: 75 },
+        { name: "Competitor Benchmarking & Market Research", level: 70 },
+        { name: "Go-To-Market Planning", level: 80 },
+        { name: "Social Media Strategies", level: 70 }
       ]
     },
     {
       title: "Data & Analytics",
       skills: [
-        { name: "Power BI", level: 85 },
-        { name: "Google Analytics (GA4)", level: 87 },
-        { name: "Excel (Advanced)", level: 92 },
-        { name: "Looker Studio", level: 80 },
-        { name: "Campaign Manager 360", level: 82 }
+        { name: "Power BI", level: 80 },
+        { name: "Google Analytics (GA4)", level: 75 },
+        { name: "Excel (Advanced)", level: 85 },
+        { name: "Looker Studio", level: 75 },
+        { name: "Campaign Manager 360", level: 75 }
       ]
     },
     {
       title: "Platforms & Channels",
       skills: [
-        { name: "Google Ads (Search, Display, YouTube)", level: 90 },
-        { name: "Meta Ads (Facebook & Instagram)", level: 90 },
-        { name: "LinkedIn Ads", level: 85 },
-        { name: "Programmatic Ads (DV360)", level: 88 },
-        { name: "SEO & SEMrush", level: 86 }
+        { name: "Google Ads (Search, Display, YouTube)", level: 70 },
+        { name: "Meta Ads (Facebook & Instagram)", level: 75 },
+        { name: "LinkedIn Ads", level: 75 },
+        { name: "Programmatic Ads (DV360)", level: 78 },
+        { name: "SEO & SEMrush", level: 75 }
       ]
     },
     {
       title: "Content & Tools",
       skills: [
-        { name: "MS PowerPoint", level: 95 },
-        { name: "Google Suite", level: 90 },
-        { name: "Adobe", level: 80 },
-        { name: "Canva", level: 92 },
-        { name: "WordPress & CMS Tools", level: 85 }
+        { name: "MS PowerPoint", level: 78 },
+        { name: "Google Suite", level: 75 },
+        { name: "Adobe", level: 70 },
+        { name: "Canva", level: 75 },
+        { name: "WordPress & CMS Tools", level: 70 }
       ]
     },
     {
