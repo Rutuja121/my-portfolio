@@ -4,6 +4,21 @@ import { ExternalLink, Eye, TrendingUp } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
+      title: "180 Degrees Consulting Case : Tackling Youth Unemployment in Paris",
+      description: (
+        <ul className="list-disc pl-4 space-y-1 text-sm">
+          <li>As part of ESCP's 180 Degrees Consulting's case competition, I developed a strategic roadmap to address youth unemployment through a data-driven, systems-thinking approach.</li>
+          <li>Using a €10M budget simulation, I conducted root cause analysis across three friction points—skills mismatch, low apprenticeship retention, and fragmented support access. I proposed a three-pillar solution combining 12-week bootcamps, employer retention incentives, and place-based youth hubs.</li>
+          <li>To support decision-making, I used Excel and Power BI to analyze NEET data, employment gaps, and policy ROI. The final plan promised a {'>'}7x societal payback within 5 years, targeting 1,250 sustained jobs at 20% lower cost-per-job than national averages.</li>
+        </ul>
+      ),
+      image: "/180DC_CaseCompetition.webp",
+      technologies: ["Root Cause Analysis", "Policy & Budget Planning", "Strategic Problem Solving", "Public Sector Consulting", "Impact Modeling", "Power BI"],
+      results: "Awarded a Certificate of Excellence for presenting a well-rounded, analytically grounded, and actionable proposal that stood out for its clarity and feasibility.",
+      featured: true,
+      link: "https://www.canva.com/design/DAGtuAa9FKc/qHhOiiEZNA1ggPWNAbt3-w/view?utm_content=DAGtuAa9FKc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h75b38b4832"
+    },
+    {
       title: "L'Oréal Brandstorm 2025 : Revolutionizing Men's Grooming",
       description: (
         <ul className="list-disc pl-4 space-y-1 text-sm">
@@ -113,6 +128,7 @@ const Projects = () => {
 
   // Categorize projects
   const researchProjects = projects.filter(p => [
+    "180 Degrees Consulting Case : Tackling Youth Unemployment in Paris",
     "L'Oréal Brandstorm 2025 : Revolutionizing Men's Grooming",
     'Agile Project : Investment Proposal for KLM Airlines',
     'Twitter Sentiment Analysis – U.S. Election 2020',
@@ -165,7 +181,7 @@ const Projects = () => {
           <li>Accompanied residents to medical appointments, supporting health advocacy with empathy and responsibility.</li>
         </ul>
       ),
-      image: "/OldAgeHome.webp",
+      image: "/Old_age_home_volunteer.webp",
       technologies: ["Elderly Care Coordination", "Compassionate Communication", "Patience", "Community Service"],
       results: "Reignited emotional engagement and improved quality of life for 30+ elderly residents through consistent support and creative enrichment.",
       featured: false
@@ -180,7 +196,7 @@ const Projects = () => {
           <li>Contributed to a positive classroom culture that encouraged curiosity, discipline, and continuous learning.</li>
         </ul>
       ),
-      image: "/Teaching.jpeg",
+      image: "/Teacher.png",
       technologies: ["Student Engagement", "Lesson Planning", "Patience & Empathy", "Public Speaking"],
       results: "Taught over 50 students with stronger English proficiency and boosted classroom engagement.",
       featured: false
@@ -192,7 +208,7 @@ const Projects = () => {
       <section id="research" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Research / Projects</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Projects</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">Academic and professional research projects, campaigns, and case studies</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -269,7 +285,7 @@ const Projects = () => {
             ) : (
               volunteerProjects.map((project, index) => (
                 <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                  <img src={project.image} alt={project.title} className="w-full h-48 object-contain bg-gray-100" />
+                  <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
                   <div className="p-6">
                     <h4 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h4>
                     <div className="text-gray-600 text-sm mb-3 leading-relaxed">{project.description}</div>
