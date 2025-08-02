@@ -12,7 +12,7 @@ const Projects = () => {
           <li>To support decision-making, I used Excel and Power BI to analyze NEET data, employment gaps, and policy ROI. The final plan promised a {'>'}7x societal payback within 5 years, targeting 1,250 sustained jobs at 20% lower cost-per-job than national averages.</li>
         </ul>
       ),
-      image: "/180DC_CaseCompetition.png",
+      image: "/180DC_CaseCompetition.webp",
       technologies: ["Root Cause Analysis", "Policy & Budget Planning", "Strategic Problem Solving", "Public Sector Consulting", "Impact Modeling", "Power BI"],
       results: "Awarded a Certificate of Excellence for presenting a well-rounded, analytically grounded, and actionable proposal that stood out for its clarity and feasibility.",
       featured: true,
@@ -181,7 +181,7 @@ const Projects = () => {
           <li>Accompanied residents to medical appointments, supporting health advocacy with empathy and responsibility.</li>
         </ul>
       ),
-      image: "/Old_age_home_volunteer.png",
+      image: "/Old_age_home_volunteer.webp",
       technologies: ["Elderly Care Coordination", "Compassionate Communication", "Patience", "Community Service"],
       results: "Reignited emotional engagement and improved quality of life for 30+ elderly residents through consistent support and creative enrichment.",
       featured: false

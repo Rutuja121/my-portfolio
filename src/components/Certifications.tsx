@@ -15,7 +15,7 @@ const Certifications = () => {
       title: "L'Oréal Brandstorm 2025 Certificate",
       organization: "L'Oréal Global Innovation Challenge",
       description: "Recognized for developing EpiSmart, an AI-powered adhesive patch for real-time skin and hair diagnostics, merging technology, sustainability, and self-care in men's grooming.",
-      image: "/Brandstorm_certificate.png",
+      image: "/Brandstorm_certificate.webp",
       date: "March2025",
       link: "https://www.canva.com/design/DAGjazogm0c/N2CtRQUDgxb7yhtSB-ra6w/edit"
     },
